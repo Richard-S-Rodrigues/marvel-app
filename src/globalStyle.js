@@ -1,10 +1,10 @@
-import styled, { createGlobalStyle } from 'styled-components'
-
+import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 	
 	:root {
 		--main-color: #115aad;
+		--color-background-dark: #121214;
 	}
 
 	* {
@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
 	}
 
 	body {
-		background-color: #363636;
+		background-color: var(--color-background-dark);
 		width: 100%;
 	}
 
@@ -28,7 +28,7 @@ export const GlobalStyle = createGlobalStyle`
 		color: #a1a1a1;
 	}
 
-`
+`;
 
 export const Input = styled.input`
 	width: 100%;
@@ -36,4 +36,4 @@ export const Input = styled.input`
 	padding: 1em;
 	border: none;
 	border-radius: 1em;
-`
+`;

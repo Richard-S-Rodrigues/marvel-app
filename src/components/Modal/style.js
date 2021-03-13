@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const ModalWrapper = styled.div`
 	width: 100%;
@@ -6,7 +6,7 @@ export const ModalWrapper = styled.div`
 	margin: 0;
 	padding: 0;
 
-	background-color: rgba(0,0,0,0.7);
+	background-color: rgba(0, 0, 0, 0.7);
 
 	position: fixed;
 	top: 0;
@@ -15,10 +15,10 @@ export const ModalWrapper = styled.div`
 	justify-content: center;
 	align-items: center;
 
-	transition: .5s;
+	transition: 0.5s;
 
 	opacity: 0;
-    visibility: hidden;
+	visibility: hidden;
 
 	&.active {
 		opacity: 1;
@@ -35,7 +35,7 @@ export const ModalWrapper = styled.div`
 	div.close-btn button {
 		font-weight: 600;
 		font-size: 28px;
-		padding: .5em;
+		padding: 0.5em;
 		background-color: transparent;
 		color: #fff;
 		border: none;
@@ -48,11 +48,11 @@ export const ModalWrapper = styled.div`
 	}
 
 	div.main-section {
-		width: 80%;
+		width: 50em;
 		position: relative;
 		overflow: auto;
-		height: 100%;
-		background: #F0F2f5;
+		height: auto;
+		background: #f0f2f5;
 		border-radius: 1em;
 	}
 
@@ -74,7 +74,6 @@ export const ModalWrapper = styled.div`
 		margin: 1em auto auto 1em;
 	}
 
-
 	.main-container {
 		width: 100%;
 		height: inherit;
@@ -83,31 +82,25 @@ export const ModalWrapper = styled.div`
 
 	.main-container div:first-child {
 		display: flex;
-		flex-direction: row;
 		width: 100%;
 	}
 
-
 	.info-container {
-		display: flex;
-		flex-direction: column;
 		width: 100%;
+		height: 70%;
 		margin-right: 4em;
 	}
 
-	.info-container div:first-child {
-		height: 2em; 
-	}
-
 	.info-container .text-container {
-		display: block;
+		flex-direction: column;
 		overflow: auto;
 		width: 100%;
+		height: 100%;
 		padding: 0;
 
 		/* Hide scrollbar for IE, Edge and Firefox */
-		-ms-overflow-style: none;  /* IE and Edge */
-  		scrollbar-width: none;  /* Firefox */
+		-ms-overflow-style: none; /* IE and Edge */
+		scrollbar-width: none; /* Firefox */
 	}
 
 	/* Hide scrollbar for Chrome, Safari and Opera */
@@ -120,13 +113,12 @@ export const ModalWrapper = styled.div`
 		line-height: 1.8em;
 	}
 
-		
 	.actions-container {
 		display: flex;
 		flex-direction: row;
 		width: 100%;
 		height: 20%;
-		margin-top: .1em;
+		margin-top: 0.1em;
 	}
 
 	.actions-container button {
@@ -134,7 +126,7 @@ export const ModalWrapper = styled.div`
 		background-color: var(--main-color);
 		color: #fff;
 		border: none;
-		border-radius: .1em;
+		border-radius: 0.1em;
 		padding: 1.2em;
 		font-size: 18px;
 		font-weight: 600;
@@ -161,7 +153,7 @@ export const ModalWrapper = styled.div`
 
 		border: none;
 		background-color: transparent;
-		color: #fff;
+		color: black;
 		cursor: pointer;
 	}
 
@@ -177,9 +169,7 @@ export const ModalWrapper = styled.div`
 		right: 1em;
 	}
 
-	
 	@media (max-width: 904px) {
-
 		div.main-section {
 			width: 90%;
 			margin: auto;
@@ -198,7 +188,5 @@ export const ModalWrapper = styled.div`
 			margin-bottom: 1em;
 			max-height: 12em;
 		}
-
 	}
-
-`
+`;
