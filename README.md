@@ -1,19 +1,12 @@
-## To Do
+## Marvel Catalog App
+This is a marvel catalog created with Reactjs using the <a href='https://developer.marvel.com/'>Marvel API</a>
 
--   [x] -   Consume the Marvel API
+### In order to work
+`Get your` <a href='https://developer.marvel.com/account'>Token</a> `and put in a .env file.`
 
--   [x] -   List the comics in the main page
-
--   [x] -   List the characters in the main page
-
--   [x] -   Make a forward button that allows to go to another page where other comics/characters are displayed
-
--   [x] -   Make a Search input that allows to search for comics and characters
-
--   [x] -   When the user clicks in a comic/character a modal is displayed showing the info
-
--   [] - Make an Sign in / Sign up page
-
--   [] - Users can favorate comics and characters
-
--   [] - The user have a profile page that contains his favorite comics/characters
+<h2>🛠 Tech Stack</h2>
+   <p>
+    <img src='https://img.shields.io/badge/-React-05122A?style=flat&logo=react' alt='React' />
+    <img src='https://img.shields.io/badge/-Styled Components-05122A?style=flat&logo=styled-components' alt='Styled Components' />
+  <img src='https://img.shields.io/badge/-MaterialUi/icons-05122A?style=flat&logo=material-ui' alt='Material Ui/icons' />
+   </p>
